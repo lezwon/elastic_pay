@@ -77,6 +77,21 @@
                     }
                 );
             }
+
+            $("#save-logs").click(function(e){
+              NativeLogs.getLog(1000,true, function(_logs) {
+                window.plugins.toast.showWithOptions(
+                  {
+                    message: "hey there",
+                    duration: "short", // which is 2000 ms. "long" is 4000. Or specify the nr of ms yourself.
+                    position: "bottom",
+                    addPixelsY: -40  // added a negative value to move it up a bit (default 0)
+                  }
+                );
+              })
+            })
+          
+
             $(document).on("click","#display",function() {
                 var storage = window.localStorage;
                 var value = storage.getItem('hashPassword')
@@ -252,6 +267,7 @@
                 <p>
                   <a target="_blank" href="javascript:scan();" style="text-decoration: none"><button>Scan</button></a>
                   <div  id="display" style="text-decoration: none"><button>Show QR code</button></div>
+                  <div><button id="save-logs">Save Logs</button></div>
                   <div  id="sign_in" style="text-decoration: none"><button>Sign In</button></div>
                   <img id="qrcode"></img>
 

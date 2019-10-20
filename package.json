@@ -10,6 +10,7 @@
     "cordova-browser": "^6.0.0",
     "cordova-plugin-native-logs": "^1.0.5",
     "cordova-plugin-sms": "^1.0.5",
+    "cordova-plugin-x-toast": "2.7.2",
     "phonegap-plugin-barcodescanner": "^8.1.0"
   },
   "devDependencies": {
@@ -30,7 +31,8 @@
       "cordova-plugin-whitelist": {},
       "phonegap-plugin-barcodescanner": {},
       "cordova-plugin-sms": {},
-      "cordova-plugin-native-logs": {}
+      "cordova-plugin-native-logs": {},
+      "cordova-plugin-x-toast": {}
     },
     "platforms": [
       "browser",

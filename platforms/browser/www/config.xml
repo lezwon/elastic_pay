@@ -9,6 +9,7 @@
     </author>
     <content src="index.html" />
     <gap:plugin name="cordova-plugin-sms" source="npm" />
+    <gap:plugin name="cordova-plugin-x-toast" source="npm" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

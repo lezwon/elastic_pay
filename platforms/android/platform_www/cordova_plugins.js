@@ -55,6 +55,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "window.NativeLogs"
       ]
+    },
+    {
+      "id": "cordova-plugin-x-toast.Toast",
+      "file": "plugins/cordova-plugin-x-toast/www/Toast.js",
+      "pluginId": "cordova-plugin-x-toast",
+      "clobbers": [
+        "window.plugins.toast"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -65,6 +73,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-whitelist": "1.2.2",
     "phonegap-plugin-barcodescanner": "8.1.0",
     "phonegap-plugin-push": "1.8.4",
-    "cordova-plugin-native-logs": "1.0.5"
+    "cordova-plugin-native-logs": "1.0.5",
+    "cordova-plugin-x-toast": "2.7.2"
   };
 });

@@ -24,6 +24,9 @@
         <param name="android-package" value="com.del7a.nativelogs.NativeLogs" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="Toast">
+        <param name="android-package" value="nl.xservices.plugins.Toast" />
+    </feature>
     <name>elastic_pay_mobile</name>
     <description>
         Push sample application that receives push notifications.
@@ -33,6 +36,7 @@
     </author>
     <content src="index.html" />
     <gap:plugin name="cordova-plugin-sms" source="npm" />
+    <gap:plugin name="cordova-plugin-x-toast" source="npm" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

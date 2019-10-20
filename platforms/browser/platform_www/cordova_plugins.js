@@ -648,6 +648,14 @@ module.exports = [
         "clobbers": [
             "window.NativeLogs"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-x-toast/www/Toast.js",
+        "id": "cordova-plugin-x-toast.Toast",
+        "pluginId": "cordova-plugin-x-toast",
+        "clobbers": [
+            "window.plugins.toast"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -676,7 +684,8 @@ module.exports.metadata =
     "phonegap-plugin-push": "1.8.4",
     "phonegap-plugin-barcodescanner": "8.1.0",
     "cordova-plugin-sms": "1.0.5",
-    "cordova-plugin-native-logs": "1.0.5"
+    "cordova-plugin-native-logs": "1.0.5",
+    "cordova-plugin-x-toast": "2.7.2"
 }
 // BOTTOM OF METADATA
 });
